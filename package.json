@@ -1,7 +1,7 @@
 {
-  "name": "vue-signature-pad",
+  "name": "@bitbuy-at/vue-signature-pad",
   "description": "SignaturePad component for Vue.js",
-  "version": "2.0.5",
+  "version": "2.1.0",
   "main": "dist/vue-signature-pad.ssr.js",
   "unpkg": "dist/vue-signature-pad.min.js",
   "module": "dist/vue-signature-pad.esm.js",
@@ -68,7 +68,7 @@
   },
   "dependencies": {
     "merge-images": "^1.1.0",
-    "signature_pad": "^3.0.0-beta.3",
+    "signature_pad": "^4.2.0",
     "vue": "^2.6.14"
   },
   "devDependencies": {
