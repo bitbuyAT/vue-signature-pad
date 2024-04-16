@@ -53,7 +53,7 @@ export default {
 </script>
 ```
 
-[vue-signature-pad](https://github.com/neighborhood999/vue-signature-pad) use [szimek/signature_pad](https://github.com/szimek/signature_pad) default setting as `options`, feel free custom you wanted options. In [v2.1.2](https://github.com/bitbuy-at/vue-signature-pad/releases/tag/2.1.2) added `@begin-stroke` and `@end-stroke` events:
+[vue-signature-pad](https://github.com/neighborhood999/vue-signature-pad) use [szimek/signature_pad](https://github.com/szimek/signature_pad) default setting as `options`, feel free custom you wanted options. In [v2.1.4](https://github.com/bitbuyAT/vue-signature-pad/releases/tag/2.1.4) added `@begin-stroke` and `@end-stroke` events:
 
 ```vue
 <template>

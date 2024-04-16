@@ -16,6 +16,9 @@ export default Vue.extend({
       console.log(isEmpty);
       console.log(data);
     },
+    beginStroke() {
+      console.log('begin stroke');
+    },
     endStroke() {
       console.log('end stroke');
     }
@@ -30,6 +33,7 @@ export default Vue.extend({
       ref="signaturePad"
       width="500px"
       height="500px"
+      @begin-stroke="beginStroke"
       @end-stroke="endStroke"
     />
     <div id="buttons">
