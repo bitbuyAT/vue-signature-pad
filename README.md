@@ -53,7 +53,7 @@ export default {
 </script>
 ```
 
-[vue-signature-pad](https://github.com/neighborhood999/vue-signature-pad) use [szimek/signature_pad](https://github.com/szimek/signature_pad) default setting as `options`, feel free custom you wanted options. In [v1.1](https://github.com/neighborhood999/vue-signature-pad/releases/tag/1.1.0) add `onBegin` and `onEnd` event callback:
+[vue-signature-pad](https://github.com/neighborhood999/vue-signature-pad) use [szimek/signature_pad](https://github.com/szimek/signature_pad) default setting as `options`, feel free custom you wanted options. In [v2.1.2](https://github.com/bitbuy-at/vue-signature-pad/releases/tag/2.1.2) added `@begin-stroke` and `@end-stroke` events:
 
 ```vue
 <template>
@@ -62,17 +62,19 @@ export default {
       width="500px"
       height="500px"
       ref="signaturePad"
-      :options="{ onBegin, onEnd }"
+      :options="{}"
+      @begin-stroke='beginStroke'
+      @end-stroke='endStroke'
     />
   </div>
 </template>
 <script>
 export default {
   methods: {
-    onBegin() {
+    beginStroke() {
       console.log('=== Begin ===');
     },
-    onEnd() {
+    endStroke() {
       console.log('=== End ===');
     }
   }

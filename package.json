@@ -1,7 +1,7 @@
 {
   "name": "@bitbuy-at/vue-signature-pad",
   "description": "SignaturePad component for Vue.js",
-  "version": "2.1.0",
+  "version": "2.1.2",
   "main": "dist/vue-signature-pad.ssr.js",
   "unpkg": "dist/vue-signature-pad.min.js",
   "module": "dist/vue-signature-pad.esm.js",
@@ -56,7 +56,7 @@
   "author": "Peng Jie <bivinity.pengzjie@gmail.com> (https://github.com/neighborhood999)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/neighborhood999/vue-signature-pad.git"
+    "url": "git+https://github.com/bitbuyAT/vue-signature-pad.git"
   },
   "keywords": [
     "vue",
@@ -64,7 +64,7 @@
     "component"
   ],
   "bugs": {
-    "url": "https://github.com/neighborhood999/vue-signature-pad/issues"
+    "url": "https://github.com/bitbuyAT/vue-signature-pad/issues"
   },
   "dependencies": {
     "merge-images": "^1.1.0",

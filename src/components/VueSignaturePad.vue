@@ -73,6 +73,9 @@ export default {
     });
     this.signaturePad = signaturePad;
 
+    this.signaturePad.addEventListener('beginStroke', this.beginStroke);
+    this.signaturePad.addEventListener('endStroke', this.endStroke);
+
     if (options.resizeHandler) {
       this.resizeCanvas = options.resizeHandler.bind(this);
     }
@@ -88,9 +91,17 @@ export default {
     if (this.onResizeHandler) {
       window.removeEventListener('resize', this.onResizeHandler, false);
     }
+    this.signaturePad.removeEventListener('beginStroke', this.beginStroke);
+    this.signaturePad.removeEventListener('endStroke', this.beginStroke);
   },
 
   methods: {
+    beginStroke() {
+      this.$emit('begin-stroke');
+    },
+    endStroke() {
+      this.$emit('end-stroke');
+    },
     resizeCanvas() {
       const canvas = this.$refs.signaturePadCanvas;
       const data = this.signaturePad.toData();

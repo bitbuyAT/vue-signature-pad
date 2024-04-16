@@ -15,6 +15,9 @@ export default Vue.extend({
       const { isEmpty, data } = this.$refs.signaturePad.saveSignature();
       console.log(isEmpty);
       console.log(data);
+    },
+    endStroke() {
+      console.log('end stroke');
     }
   }
 });
@@ -27,6 +30,7 @@ export default Vue.extend({
       ref="signaturePad"
       width="500px"
       height="500px"
+      @end-stroke="endStroke"
     />
     <div id="buttons">
       <button @click="save">Save</button>
